@@ -12,9 +12,9 @@ const GifModal = (props) => {
       <div className="gif-modal">
         <img src={ props.selectedGif.images.original.url } />
         <p><strong>Source:</strong> <a href={ props.selectedGif.source }>{ props.selectedGif.source }</a></p>
-        <p><strong>Rating:</strong> { props.selectedGif.rating }</p>
 
-        <button onClick={() => props.onRequestClose()}>close</button>
+
+        <button id="closeButton" onClick={() => props.onRequestClose()}>back to gifs</button>
       </div>
     </Modal>
   );
