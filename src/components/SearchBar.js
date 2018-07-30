@@ -6,7 +6,8 @@ class SearchBar extends React.Component {
       this.state = { term: '' }
   }
 
-  onInputChange(term) {
+  //Search bar maintains constant rendering
+  onSearch(term) {
       this.setState({term});
       this.props.onTermChange(term);
   }
@@ -14,7 +15,7 @@ class SearchBar extends React.Component {
   render() {
     return (
         <div className="search">
-          <input placeholder="Search Gifs" onChange={event => this.onInputChange(event.target.value)} />
+          <input placeholder="Search Gifs" onChange={event => this.onSearch(event.target.value)} />
         </div>
     );
   }

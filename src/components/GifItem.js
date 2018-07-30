@@ -1,5 +1,6 @@
 import React from 'react';
 
+//When gif is clicked, create gif state
 const GifItem = ({gif, onGifSelect}) => {
   return (
     <div className="gif-item" onClick={() => onGifSelect(gif)}>

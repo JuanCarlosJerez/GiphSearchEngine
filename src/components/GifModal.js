@@ -1,11 +1,15 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+
 const GifModal = (props) => {
   if (!props.selectedGif) {
     return <div></div>;
   }
   return (
+
+//If modal is open activate modalIsOpen and add feature for modal to close
+//Create button that enables closing of modal and takes you back to main screen
     <Modal
       isOpen={ props.modalIsOpen }
       onRequestClose={ () => props.onRequestClose() }>
