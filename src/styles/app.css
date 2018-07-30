@@ -12,12 +12,24 @@
   background-color: black;
 }
 
+
 .gif-item {
   box-sizing: border-box;
   display: inline-block;
-  margin: auto;
-  padding: .5em;
-  width: 50%;
+  margin: 5 px ;
+  padding: 1em;
+  width: 55%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width:150px;
+  max-height:50px;
+}
+
+.logoclass{
+    width: 300px;
+    height: 150px;
 }
 
 .gif-item img {
@@ -25,10 +37,11 @@
 }
 
 .gif-list {
-  column-gap: 1.5em;
-  font-size: .85em;
-  margin: 1.5em 0;
-  padding: 0;
+  column-gap: oem;
+  font-size: .0em;
+  margin: 0em;
+  padding:0em;
+  padding-bottom: 0
 }
 
 .gif-modal {
