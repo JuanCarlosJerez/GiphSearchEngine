@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 import GifModal from './GifModal';
 import request from 'superagent';
 import '../styles/app.css';
+import Button from './Button';
 
 
 export default class App extends React.Component {
@@ -41,11 +42,13 @@ handleTermChange = (search) => {
   });
 };
 
+
 //Render Search Bar, GifList, and GifModal
   render() {
     return (
       <div>
         <SearchBar onTermChange={this.handleTermChange} />
+        <Button />
         <GifList  gifs={this.state.gifs}
                   onGifSelect={selectedGif => this.openModal(selectedGif) } />
         <GifModal modalIsOpen={this.state.modalIsOpen}
