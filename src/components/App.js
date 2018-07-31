@@ -47,6 +47,7 @@ handleTermChange = (search) => {
   render() {
     return (
       <div>
+    
         <SearchBar onTermChange={this.handleTermChange} />
         <Button />
         <GifList  gifs={this.state.gifs}
