@@ -1,22 +1,50 @@
 .app {
- margin: 3em auto;
- width: 80%;
+    margin: 3em auto;
+    width: 80%;
 }
 
 #title {
- color: #1be098;
- text-align: center;
+    color: #1be098;
+    text-align: center;
 }
 
 #page {
- background-color: black;
- margin-left: 2.5%;
- margin-right: 2.5%;
- cursor: grab;
- font-family: 'Archivo Black', sans-serif;
- color: white;
+    background-color: black;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    cursor: grab;
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
 
 }
+
+.links {
+    color:  rgb(62, 107, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    margin-top: 14%;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+#link1:hover {
+    color: rgb(237, 38, 255);
+}
+
+#link2 {
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+#link2:hover {
+    color: #1be098;
+}
+
+
+#link3:hover {
+    color: #1be098;
+}
+
 
 input {
     display: block;
@@ -39,7 +67,7 @@ input {
     border-radius:1em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    font-family:'Archivo Black', sans-serif;
     font-weight:300;
     color:white;
     text-align:center;
@@ -60,67 +88,41 @@ input {
     max-height:450px;
 }
 
-/* Style the header */
-.header {
-   padding-top: 10px;
-   padding-bottom: 50px;
-   background: black;
-   color: #f1f1f1;
-   width: auto;
-   height: 10;
- }
- 
- 
- /* The sticky class is added to the header with JS when it reaches its scroll position */
- .sticky {
-   position: fixed;
-   top: 0;
-   width: 100%
- }
- 
- /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
- .sticky + .content {
-   padding-top: 102px;
- }
-
-
 .gif-item {
- box-sizing: border-box;
- display: inline-block;
- padding: 1em;
- width: auto;
- margin-top: 5px;
- margin-bottom: 5px;
- margin-left: 5px;
- margin-right: 5px;
- max-width:2000px;
- max-height:1000px;
- 
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1em;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width:2000px;
+    max-height:1000px;
 }
 
-.logoclass{
-   display: block;
-   flex:flex ;
-   height: 110px;
-   width: 40%;
-   margin: 0 auto ;
-   box-align: center;
- 
+.header {
+    width: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: .25%;
 }
+
 
 .gif-item img {
- width: auto;
- height: 200px;
- margin-left: 2%;
+    width: auto;
+    height: 200px;
+    margin-left: 2%;
 }
 
 .gif-list {
- column-gap: oem;
- font-size: .0em;
- margin-top: 1rem;
- padding:0em;
- padding-bottom: 0;
- margin-left: .9%;
+    column-gap: oem;
+    font-size: .0em;
+    margin-top: 1rem;
+    padding:0em;
+    padding-bottom: 0;
+    margin-left: .9%;
 }
 
 .gif-modal {
@@ -132,86 +134,34 @@ input {
 }
 
 #closeButton {
-  background: #2d9c8d;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1be098), to(#2d9c8d));
-  background: -webkit-linear-gradient(top, #1be098, #2d9c8d);
-  background: -moz-linear-gradient(top, #1be098, #2d9c8d);
-  background: -ms-linear-gradient(top, #1be098, #2d9c8d);
-  background: -o-linear-gradient(top, #1be098, #2d9c8d);
-  padding: 3.5px 7px;
-  border-radius: 20px;
-  color: #000000;
-  font-size: 10px;
-  font-family: Helvetica, Arial, Sans-Serif;
-  text-decoration: none;
-  vertical-align: middle;
+    background: #2d9c8d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1be098), to(#2d9c8d));
+    background: -webkit-linear-gradient(top, #1be098, #2d9c8d);
+    background: -moz-linear-gradient(top, #1be098, #2d9c8d);
+    background: -ms-linear-gradient(top, #1be098, #2d9c8d);
+    background: -o-linear-gradient(top, #1be098, #2d9c8d);
+    padding: 3.5px 7px;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 10px;
+    font-family: 'Archivo Black', sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
   }
 .button:hover {
-  border-top-color: #1c42ff;
-  background: #1c42ff;
-  color: #fcfcfc;
+    border-top-color: #1c42ff;
+    background: #1c42ff;
+    color: #fcfcfc;
   }
 .button:active {
-  border-top-color: #1b435e;
-  background: #1b435e;
+    border-top-color: #1b435e;
+    background: #1b435e;
 }
-
-
-/*
-@media only screen and (min-width: 400px) {
-   .gif-list {
-       -moz-column-count: 2;
-       -webkit-column-count: 2;
-       column-count: 2;
-   }
-}
-
-@media only screen and (min-width: 700px) {
-   .gif-list {
-       -moz-column-count: 2;
-       -webkit-column-count: 2;
-       column-count: 2;
-   }
-}
-
-@media only screen and (min-width: 900px) {
-   .gif-list {
-       -moz-column-count: 3;
-       -webkit-column-count: 3;
-       column-count: 3;
-   }
-}
-
-@media only screen and (min-width: 1100px) {
-   .gif-list {
-       -moz-column-count: 5;
-       -webkit-column-count: 5;
-       column-count: 5;
-   }
-}
-
-@media only screen and (min-width: 1280px) {
-   .app {
-       width: 1140px;
-   }
-} */
-
-
-
-/* #myCanvas {
-    display: block;
-} */
 
 .random {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    /* position: absolute; */
+    font-family: 'Archivo Black', sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
-    /* padding: 7px 20px;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    top: 50%; */
     border-radius: 10px;
     color: white;
     text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
@@ -221,13 +171,11 @@ input {
     cursor: grab;
     outline: 0 !important;
     animation: pulse 1s infinite alternate;
-    transition: background 0.4s, border 0.2s, margin 0.2s;
-    
+    transition: background 0.4s, border 0.2s, margin 0.2s; 
 }
 .random:hover {
     background: hsla(220, 100%, 60%, 1);
     margin-top: -1px;
-
     animation: none;
 }
 .random:active {
